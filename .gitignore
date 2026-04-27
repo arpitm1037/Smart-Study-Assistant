@@ -1,0 +1,27 @@
+# Environment variables (CRITICAL)
+
+.env
+
+# Python cache
+
+**pycache**/
+*.pyc
+
+# Virtual environments
+
+venv/
+env/
+.venv/
+
+# OS files
+
+.DS_Store
+
+# Logs
+
+*.log
+
+# IDE files (optional but safe)
+
+.vscode/
+.idea/
