@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <div class="chat-header">
+            Smart Study Assistant
+        </div>
+
+        
+        <div id="chatBox" class="chat-box">
+            <div class="message bot">Ask me anything about CS concepts 👇</div>
+        </div>
+
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="queryInput" 
+                placeholder="Ask something..." 
+                onkeypress="if(event.key === 'Enter') askQuestion()"
+            />
+            <button id="sendBtn" onclick="askQuestion()">Send</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
