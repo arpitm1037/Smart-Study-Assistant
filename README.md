@@ -65,22 +65,108 @@ Suggested:
 
 ## ⚙️ Setup Instructions
 
-Clone the repository:
+## ⚙️ Setup Instructions
 
-git clone <your-repo-url>
+### 1. Clone the Repository
+
+git clone https://github.com/arpitm1037/Smart-Study-Assistant.git
 cd SmartStudyAssistant
 
-Install dependencies:
+---
+
+### 2. Create Virtual Environment (Recommended)
+
+python3 -m venv venv
+source venv/bin/activate
+
+(On Windows)
+venv\Scripts\activate
+
+---
+
+### 3. Install Dependencies
 
 pip install -r requirements.txt
 
-Run backend:
+---
+
+### 4. Set Up Environment Variables
+
+Create a `.env` file in the root directory:
+
+OPENROUTER_API_KEY=your_api_key_here
+
+(Optional if using Gemini)
+GEMINI_API_KEY=your_api_key_here
+
+⚠️ Do NOT push this file to GitHub
+
+---
+
+### 5. Run Backend Server
 
 uvicorn main:app --reload
 
-Open frontend:
+Server will start at:
+http://127.0.0.1:8000
+
+You can test APIs here:
+http://127.0.0.1:8000/docs
+
+---
+
+### 6. Run Frontend
+
+Open the frontend manually:
 
 frontend/index.html
+
+OR run a simple local server:
+
+cd frontend
+python3 -m http.server 5500
+
+Then open:
+http://localhost:5500
+
+---
+
+### 📦 Dependencies Used
+
+* fastapi
+* uvicorn
+* python-dotenv
+* numpy
+* faiss-cpu
+* sentence-transformers
+* openai
+
+---
+
+### ✅ System Requirements
+
+* Python 3.9+
+* Internet connection (for API calls)
+* macOS / Linux / Windows
+
+---
+
+### ⚠️ Important Notes
+
+* Ensure `.env` is not committed (use `.gitignore`)
+* First API call may be slightly slow due to model loading
+* FAISS runs in-memory (no external database required)
+
+---
+
+### 🎯 Quick Start Summary
+
+1. Install dependencies
+2. Add API key in `.env`
+3. Run backend
+4. Open frontend
+5. Start asking questions 🚀
+
 
 ---
 
