@@ -1,4 +1,4 @@
-# 📌 Smart Study Assistant (GenAI + RAG)
+# 📌 Smart Study Assistant
 
 ## 🚀 Overview
 
